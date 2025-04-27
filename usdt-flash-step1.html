@@ -47,15 +47,11 @@
   </style>
 </head>
 <body>
-
-  <!-- الشاشة 1: الترحيب -->
   <div class="screen active" id="screen1">
     <h1>مرحباً بك في USDT Flash</h1>
     <p>استثمر عملاتك الرقمية واحصل على أرباح خيالية</p>
     <button onclick="goToScreen(2)">ابدأ الاستثمار الآن</button>
   </div>
-
-  <!-- الشاشة 2: الباقات -->
   <div class="screen" id="screen2">
     <h1>اختر الباقة المناسبة</h1>
 
@@ -107,21 +103,3 @@
       <p>مدة الباقة: 110 يوم</p>
       <button onclick="goToScreen(3)">شراء الآن</button>
     </div>
-
-  </div>
-
-  <!-- الشاشة 3: placeholder مؤقت -->
-  <div class="screen" id="screen3">
-    <h1>شاشة إدخال المحفظة (سيتم تصميمها في الخطوة القادمة)</h1>
-    <p>باقي الخطوات قادمة...</p>
-  </div>
-
-  <script>
-    function goToScreen(num) {
-      document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-      document.getElementById('screen' + num).classList.add('active');
-    }
-  </script>
-
-</body>
-</html>
